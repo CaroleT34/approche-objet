@@ -8,11 +8,11 @@ public class AdressePostale {
 	public String ville;
 	
 	//constructeur sans paramètre
-	public AdressePostale() {
-		//contient par exemple une valeur par défaut
-		codePostal = 34070;
-		ville = "Montpellier";
-	}
+//	public AdressePostale() {
+//		//contient par exemple une valeur par défaut
+//		codePostal = 34070;
+//		ville = "Montpellier";
+//	}
 
 	//constructeur (seule méthode qui commence par une MAJ)
 	public AdressePostale (int numeroRue, String libelleRue, int codePostal, String ville) {
@@ -23,6 +23,11 @@ public class AdressePostale {
 		this.ville = ville;
 		
 		System.out.println("Affichage dans AdressePostale : " + this.numeroRue);
+	}
+	
+	public String toString() {
+		return "n°" + numeroRue + " " + libelleRue + ", " + codePostal
+				+ " " + ville;
 	}
 
 
