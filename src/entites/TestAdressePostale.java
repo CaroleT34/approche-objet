@@ -4,6 +4,7 @@ public class TestAdressePostale {
 
 	public static void main(String[] args) {
 		
+		
 		AdressePostale AdressePostale1 = new AdressePostale();
 		AdressePostale1.numeroRue = 5;
 		AdressePostale1.libelleRue = "Rue des Jonquilles";
