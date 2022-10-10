@@ -3,14 +3,13 @@ package entites2;
 import entites.AdressePostale;
 
 public class Personne {
-
-	public String nom;
+	
 	public String prenom;
+	public String nom;
 	public AdressePostale adresse;
 	
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public Personne(String prenom, String nom) {
+		this.prenom = prenom;
+		this.nom = nom;
 	}
-
 }
