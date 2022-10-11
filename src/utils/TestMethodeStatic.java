@@ -16,8 +16,15 @@ public class TestMethodeStatic {
         }
 		
 		//Deuxième partie de l'exo
-		int a = Integer.MAX_VALUE; // maxVal
-        int b = Integer.MIN_VALUE; // minVal
+		int a = 15;
+		int b =21;
+		
+		int result = Integer.max(a,b);
+		System.out.print("Valeur max entre a = " + a + " et b = " + b + " est " + result);
+		
+		//Autre exo sympa
+		int maxVal = Integer.MAX_VALUE;
+        int minVal = Integer.MIN_VALUE; 
        
         int array[] = {51, 24, 19, 5, 37, 76, 61, 99, 101, 36};
   
@@ -25,14 +32,14 @@ public class TestMethodeStatic {
 //        	System.out.print(nombre+" ");
   
         for(int i = 0; i < array.length; i++){
-        	if(array[i] < a)
-        		a = array[i];
-        	if(array[i] > b)
-        		b = array[i];
+        	if(array[i] < maxVal)
+        		maxVal = array[i];
+        	if(array[i] > minVal)
+        		minVal = array[i];
         }
   
-       System.out.print("Valeur minimale = " + a);
-       System.out.print("\nValeur maximale = " + b);
+       System.out.print("\nValeur minimale = " + maxVal);
+       System.out.print("\nValeur maximale = " + minVal);
 
 	}
 
