@@ -21,8 +21,8 @@ public class TestMethodeStatic {
        
         int array[] = {51, 24, 19, 5, 37, 76, 61, 99, 101, 36};
   
-        for (int nombre:array)
-        	System.out.print(nombre+" ");
+//        for (int nombre:array)
+//        	System.out.print(nombre+" ");
   
         for(int i = 0; i < array.length; i++){
         	if(array[i] < a)
@@ -31,7 +31,7 @@ public class TestMethodeStatic {
         		b = array[i];
         }
   
-       System.out.print("\nValeur minimale = " + a);
+       System.out.print("Valeur minimale = " + a);
        System.out.print("\nValeur maximale = " + b);
 
 	}

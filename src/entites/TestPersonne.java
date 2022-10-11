@@ -18,6 +18,12 @@ public class TestPersonne {
 		
 		Personne1.afficherIdentite();
 		Personne2.afficherIdentite();
+		
+		//Test variable static
+		System.out.println(adresse2.pays);
+		//Privilégier cette écriture car on comprend que cette variable est static
+		System.out.println(AdressePostale.pays);
+		
 
 	}
 

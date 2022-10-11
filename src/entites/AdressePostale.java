@@ -2,17 +2,15 @@ package entites;
 
 public class AdressePostale {
 	
-	public int numeroRue;
-	public String libelleRue;
-	public int codePostal;
-	public String ville;
+	//Mettre les variables d'instance en privé
+	private int numeroRue;
+	private String libelleRue;
+	private int codePostal;
+	private String ville;
 	
-	//constructeur sans paramètre
-//	public AdressePostale() {
-//		//contient par exemple une valeur par défaut
-//		codePostal = 34070;
-//		ville = "Montpellier";
-//	}
+	//Variable de classe (i.e. staic) = Valeur partagée
+	//Laisser en public
+	public static String pays = "FRANCE";
 
 	//constructeur (seule méthode qui commence par une MAJ)
 	public AdressePostale (int numeroRue, String libelleRue, int codePostal, String ville) {
