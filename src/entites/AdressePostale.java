@@ -26,8 +26,7 @@ public class AdressePostale {
 	}
 	
 	public String toString() {
-		return "n°" + numeroRue + " " + libelleRue + ", " + codePostal
-				+ " " + ville;
+		return "n°" + numeroRue + " " + libelleRue + ", " + codePostal + " " + ville;
 	}
 
 
