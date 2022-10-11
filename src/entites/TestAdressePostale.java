@@ -17,7 +17,7 @@ public class TestAdressePostale {
 //		AdressePostale2.codePostal = 34070;
 //		AdressePostale2.ville = "Montpellier";
 		
-		System.out.println("Affichage dans TestAdressePostale : " +AdressePostale1.numeroRue);
+		System.out.println("Affichage dans TestAdressePostale : " +AdressePostale1);
 		//System.out.println(AdressePostale2.ville);
 		
 	}

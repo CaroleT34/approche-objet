@@ -12,26 +12,23 @@ public class Compte {
 	}
 	
 	//METHODES
-	//Afficher nom et prenom
+	@Deprecated
 	public void afficherCompte() {
 		System.out.println("Compte 1 : \nNuméro de compte : " + numeroCompte + "\nSolde du compte : " + soldeCompte + "€" );
 		
+	}
+	
+	//Utile lors de le revue de code (cherche une méthdoe connue)
+	public String toString() {
+		return "Compte  1 toString: \nNuméro de compte : "+ numeroCompte + "\nSolde du compte : " + soldeCompte + "€" ;
 	}
 
 	public int getNumeroCompte() {
 		return numeroCompte;
 	}
 
-	public void setNumeroCompte(int numeroCompte) {
-		this.numeroCompte = numeroCompte;
-	}
-
 	public int getSoldeCompte() {
 		return soldeCompte;
-	}
-
-	public void setSoldeCompte(int soldeCompte) {
-		this.soldeCompte = soldeCompte;
 	}
 
 }
