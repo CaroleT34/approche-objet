@@ -3,10 +3,10 @@ package fr.diginamic.banque.entites.copy;
 public class Compte {
 
 	private int numeroCompte;
-	private int soldeCompte;
+	private double soldeCompte;
 	
 	//CONSTRUCTEUR
-	public Compte(int numeroCompte, int soldeCompte) {
+	public Compte(int numeroCompte, double soldeCompte) {
 		this.numeroCompte = numeroCompte;
 		this.soldeCompte = soldeCompte;
 	}
@@ -20,7 +20,7 @@ public class Compte {
 	
 	//Utile lors de le revue de code (cherche une méthdoe connue)
 	public String toString() {
-		return "Compte  1 toString: \nNuméro de compte : "+ numeroCompte + "\nSolde du compte : " + soldeCompte + "€" ;
+		return "Compte  1 \n Numéro de compte : "+ numeroCompte + " | Solde du compte : " + soldeCompte + "€" ;
 	}
 
 	public void setNumeroCompte(int numeroCompte) {
@@ -32,11 +32,11 @@ public class Compte {
 	}
 
 
-	public void setSoldeCompte(int soldeCompte) {
+	public void setSoldeCompte(double soldeCompte) {
 		this.soldeCompte = soldeCompte;
 	}
 
-	public int getSoldeCompte() {
+	public double getSoldeCompte() {
 		return soldeCompte;
 	}
 

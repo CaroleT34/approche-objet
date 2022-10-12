@@ -13,7 +13,7 @@ public class TestBanque {
 		
 		Compte[] cpts = new Compte[2];
 		cpts[0] = new Compte(10101010, 9);
-		cpts[1] = new CompteTaux(1595656, 5583, 20);
+		cpts[1] = new CompteTaux(1595656, 5583.28, 1.2);
 		
 		for (int i = 0; i < 2; i++) {
 			System.out.println(cpts[i].toString());
