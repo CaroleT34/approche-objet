@@ -23,8 +23,17 @@ public class Compte {
 		return "Compte  1 toString: \nNuméro de compte : "+ numeroCompte + "\nSolde du compte : " + soldeCompte + "€" ;
 	}
 
+	public void setNumeroCompte(int numeroCompte) {
+		this.numeroCompte = numeroCompte;
+	}
+
 	public int getNumeroCompte() {
 		return numeroCompte;
+	}
+
+
+	public void setSoldeCompte(int soldeCompte) {
+		this.soldeCompte = soldeCompte;
 	}
 
 	public int getSoldeCompte() {
