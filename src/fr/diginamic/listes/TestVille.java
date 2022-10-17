@@ -1,6 +1,7 @@
 package fr.diginamic.listes;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TestVille {
 
@@ -60,6 +61,33 @@ public static void main(String[] args) {
 		
 		System.out.println("Nouveau tableau : " + listVilleMaj );
 		
+		System.out.println("-------------TP 13 TRI -------------------");
+		//Exercice 1 TP13 tri
+		Collections.sort(listVilles);
+		System.out.println("compareTo");
+		
+		for(Ville v : listVilles) {
+			System.out.println(v);
+		}
+		
+		//On mélange la liste
+		Collections.shuffle(listVilles);
+		
+		System.out.println("--------------------------------");
+		
+		Collections.sort(listVilles, new ComparatorHabitant());
+		System.out.println("ComparatorHabitant");
+		for(Ville v : listVilles) {
+			System.out.println(v);
+		}
+		
+		System.out.println("--------------------------------");
+		
+		Collections.sort(listVilles, new ComparatorNom());
+		System.out.println("ComparatorNom");
+		for(Ville v : listVilles) {
+			System.out.println(v);
+		}	
 		
 	}
 }
