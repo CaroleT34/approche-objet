@@ -22,6 +22,9 @@ public class MapVilles {
 		
 		
 		HashMap<String, Ville> mapVilles = new HashMap<>();
+//		for (Ville v : villes) {
+//			mapVilles.put(v.getNom(), v);
+//		}
 		mapVilles.put("Nice", villes[0]);
 		mapVilles.put("Carcasonne", villes[1]);
 		mapVilles.put("Narbonne", villes[2]);
@@ -52,13 +55,17 @@ public class MapVilles {
 		mapVilles.remove(nomVille);
 		
 		//Affichage nouveaux tableaux
-		Collection<Ville> villesModif = mapVilles.values();
-		Iterator<Ville> iterator = villesModif.iterator();
-		
-		while (iterator.hasNext()) {
-			Ville ville = iterator.next();
-			System.out.println(ville);
+		for(Ville v : mapVilles.values()) {
+			System.out.println(v);
 		}
+		
+//		Collection<Ville> villesModif = mapVilles.values();
+//		Iterator<Ville> iterator = villesModif.iterator();
+//		
+//		while (iterator.hasNext()) {
+//			Ville ville = iterator.next();
+//			System.out.println(ville);
+//		}
 		
 		
 
