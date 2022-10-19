@@ -17,7 +17,7 @@ public class TestStringBuilder {
 		
 		long debutTest = System.currentTimeMillis(); // Code à chronométrer 
 		
-		String test = new String();
+		String test = "";
 		for (int i = 1; i <= 100000; i++) {
 			test += i;
 		}
