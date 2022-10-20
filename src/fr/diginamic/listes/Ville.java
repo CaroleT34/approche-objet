@@ -5,26 +5,32 @@ public class Ville implements Comparable<Ville>{
 
 	private String nom;
 	private int nbHabitant;
+	private Continent label;
 	
-	
-
-	public Ville(String nom, int nbHabitant) {
-		this.setNom(nom);
-		this.setNbHabitant(nbHabitant);
+	public Ville(String nom, int nbHabitant, Continent label) {
+		this.nom = nom;
+		this.nbHabitant = nbHabitant;
+		this.label = label;
 	}
 
 	@Override
 	public String toString() {
-		return "nom=" + nom + ", nbHabitant=" + nbHabitant;
+		return "nom=" + nom + ", nbHabitant=" + nbHabitant + ", label=" + label;
 	}
 	
 	@Override
 	public boolean equals(Object obj) {
+		//Si l'obj n'est pas une Ville je retourne directement false
 		if(!(obj instanceof Ville)) {
 			return false;
 		}
+		//Si j'arrive la je sais que obj est une Ville
 		Ville other = (Ville) obj;
-		return nom.equals(other.getNom()) && nbHabitant == other.nbHabitant;
+		return nom.equals(other.getNom()) && nbHabitant == other.nbHabitant; //On convertit obj en Ville via un cast
+	}
+
+	public Continent getLabel() {
+		return label;
 	}
 
 	public String getNom() {
